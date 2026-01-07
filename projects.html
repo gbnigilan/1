@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Nigilan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            border-color: var(--accent-cpp);
+            box-shadow: 0 10px 30px rgba(0, 204, 255, 0.1);
+        }
+
+        .project-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            margin-right: 10px;
+        }
+
+        .tag-python {
+            color: var(--accent-python);
+            border: 1px solid var(--accent-python);
+        }
+
+        .tag-cpp {
+            color: var(--accent-cpp);
+            border: 1px solid var(--accent-cpp);
+        }
+
+        .tag-web {
+            color: var(--accent-foodie);
+            border: 1px solid var(--accent-foodie);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">Nigilan<span>.IO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="foodie.html">Foodie</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <h2 class="glitch" data-text="My Creations">My Creations</h2>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px; margin-top: 50px;">
+
+            <!-- Project 1 -->
+            <div class="project-card fade-in">
+                <div style="margin-bottom: 20px;">
+                    <span class="project-tag tag-python">Python</span>
+                    <span class="project-tag">AI</span>
+                </div>
+                <h3>AI Vidyasetu Project</h3>
+                <p style="color: var(--text-secondary); margin: 15px 0;">
+                    The project that got me to nationals. Leveraging AI to solve real-world problems (and hopefully not
+                    take over the world).
+                </p>
+                <a href="#" style="color: var(--accent-cpp); font-weight: bold; font-size: 0.9rem;">View Code -></a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card fade-in" style="animation-delay: 0.1s;">
+                <div style="margin-bottom: 20px;">
+                    <span class="project-tag tag-web">Web</span>
+                </div>
+                <h3>Personal Portfolio</h3>
+                <p style="color: var(--text-secondary); margin: 15px 0;">
+                    This very website! Built with love, neon colors, and a bit of cringe. Optimized for GitHub Pages.
+                </p>
+                <a href="#" style="color: var(--accent-cpp); font-weight: bold; font-size: 0.9rem;">View Code -></a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card fade-in" style="animation-delay: 0.2s;">
+                <div style="margin-bottom: 20px;">
+                    <span class="project-tag tag-cpp">C++</span>
+                </div>
+                <h3>Console Game</h3>
+                <p style="color: var(--text-secondary); margin: 15px 0;">
+                    A text-based adventure game. It has dragons, bugs, and memory leaks.
+                </p>
+                <a href="#" style="color: var(--accent-cpp); font-weight: bold; font-size: 0.9rem;">View Code -></a>
+            </div>
+
+            <!-- Project 4 (Idea) -->
+            <div class="project-card fade-in" style="animation-delay: 0.3s; opacity: 0.7; border-style: dashed;">
+                <div style="margin-bottom: 20px;">
+                    <span class="project-tag">Idea</span>
+                </div>
+                <h3>Food Review Bot</h3>
+                <p style="color: var(--text-secondary); margin: 15px 0;">
+                    An AI that scans my Instagram food pics and generates a roasted review. Coming soon... maybe.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made by <span>Antigravity</span> and by <span>Google Gemini 3.0 Pro</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Nigilan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: var(--font-body);
+            border-radius: 8px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-python);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">Nigilan<span>.IO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="foodie.html">Foodie</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="align-items: center;">
+        <h2 class="glitch" data-text="Hit Me Up">Hit Me Up</h2>
+        <p style="margin-top: 10px; color: var(--text-secondary); text-align: center;">
+            Have a project idea? Want to recommend a restaurant? Or just want to say hi?
+        </p>
+
+        <form class="contact-form fade-in">
+            <label style="display: block; margin-bottom: 10px; font-size: 0.9rem;">Name</label>
+            <input type="text" placeholder="Your Name">
+
+            <label style="display: block; margin-bottom: 10px; font-size: 0.9rem;">Email</label>
+            <input type="email" placeholder="your@email.com">
+
+            <label style="display: block; margin-bottom: 10px; font-size: 0.9rem;">Message</label>
+            <textarea rows="5" placeholder="Send memes or job offers..."></textarea>
+
+            <button type="submit" class="btn" style="width: 100%; cursor: pointer; border: none;">Send It</button>
+        </form>
+
+        <div style="margin-top: 50px; display: flex; gap: 20px;">
+            <a href="#" style="font-size: 1.5rem; color: var(--text-secondary);"><i class="fab fa-instagram"></i>
+                Instagram</a>
+            <a href="#" style="font-size: 1.5rem; color: var(--text-secondary);"><i class="fab fa-github"></i>
+                GitHub</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made by <span>Antigravity</span> and by <span>Google Gemini 3.0 Pro</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

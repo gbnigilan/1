@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Nigilan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .skill-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            border-color: var(--accent-python);
+            transform: translateY(-5px);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: var(--accent-python);
+            width: 0%;
+            /* Animate this via JS or inline style */
+            transition: width 1s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">Nigilan<span>.IO</span></a></div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="foodie.html">Foodie</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <h2 class="glitch" data-text="Technical Arsenal">Technical Arsenal</h2>
+
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
+
+            <!-- Python -->
+            <div class="skill-card fade-in">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>Python</h3>
+                    <span style="color: var(--accent-python)">Learning...</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%; background: var(--accent-python);"></div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-secondary);">Automating the boring
+                    stuff & AI experiments.</p>
+            </div>
+
+            <!-- C++ -->
+            <div class="skill-card fade-in" style="animation-delay: 0.1s;">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>C++</h3>
+                    <span style="color: var(--accent-cpp)">Beginner</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%; background: var(--accent-cpp);"></div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-secondary);">Understanding pointers
+                    (painfully).</p>
+            </div>
+
+            <!-- AI / Machine Learning -->
+            <div class="skill-card fade-in" style="animation-delay: 0.2s;">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>AI & ML</h3>
+                    <span style="color: #ffaa00">Vidyasetu Level</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 50%; background: #ffaa00;"></div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-secondary);">Nationals participant. I
+                    know what a Neural Net is.</p>
+            </div>
+
+            <!-- Food Tasting -->
+            <div class="skill-card fade-in" style="animation-delay: 0.3s;">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>Food Critiquing</h3>
+                    <span style="color: var(--accent-foodie)">Expert</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 99%; background: var(--accent-foodie);"></div>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.85rem; color: var(--text-secondary);">Can identify spices from
+                    a mile away.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Made by <span>Antigravity</span> and by <span>Google Gemini 3.0 Pro</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
